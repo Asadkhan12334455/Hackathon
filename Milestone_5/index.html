@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Interactive Resume</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend><b> Personal Information </b></legend>
+
+            <label for="username">Username: </label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Education </b></legend>
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Enter your education" rows="5" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Experience </b></legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Enter your work experience" rows="5" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Skills </b></legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter your skills" rows="5" required></textarea>
+        </fieldset>
+
+        <button type="submit"><b>Create Resume</b></button>
+    </form>
+
+    <br>
+    <!-- Dynamic and editable resume -->
+    <div id="resume-display" contenteditable="true"></div>
+
+    <br>
+    <!-- Shareable link section -->
+    <div id="shareable-link-container">
+        <h2><b>Shareable Link</b></h2>
+        <p>Here is your shareable link:</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><b>Download as PDF</b></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
